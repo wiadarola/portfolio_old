@@ -11,4 +11,4 @@
 </ul>
 
 <h1>My Resume</h1>
-<embed src="Resume.pdf" width="810px" height="1150px" />
+<embed src="Resume.pdf" width="810px" height="1100px" />
