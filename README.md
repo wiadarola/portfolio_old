@@ -1,6 +1,3 @@
-
-<u># wiadarola.github.io</u>
-
 <h1>JavaScript Three.js Projects</h1>
 <dl>
   <dt><a href="https://wiadarola.github.io/threejs-shader-tutorial">Three.js Shader Tutorial</a></dt>
