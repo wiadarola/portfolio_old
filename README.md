@@ -1,14 +1,18 @@
 # wiadarola.github.io
 
 <h1>JavaScript Three.js Projects</h1>
-<ul>
-  <li><a href="https://wiadarola.github.io/threejs-meshes-tutorial">Three.js Meshes Tutorial</a></li>
-  <li><a href="https://wiadarola.github.io/threejs-shader-tutorial">Three.js Shader Tutorial</a></li>
-  <li><a href="https://wiadarola.github.io/simple-solar-system">Simple Solar System</a></li>
-  <li><a href="https://wiadarola.github.io/simple-world-map">Simple World Map</a></li>
-  <li><a href="https://wiadarola.github.io/infinite-panning-visualization">Infinite Panning Visualization</a></li>
-  <li><a href="https://wiadarola.github.io/quadtree-visualization">Quadtree Visualization</a></li>
-</ul>
+<dl>
+  <dt><a href="https://wiadarola.github.io/threejs-shader-tutorial">Three.js Shader Tutorial</a></dt>
+    <dd>desc</dd>
+  <dt><a href="https://wiadarola.github.io/threejs-meshes-tutorial">Three.js Mesh Tutorial</a></dt>
+    <dd>desc</dd>
+  <dt><a href="https://wiadarola.github.io/simple-world-map">Simple World Map</a></dt>
+    <dd>desc</dd>
+  <dt><a href="https://wiadarola.github.io/infinite-panning-visualization">Infinite Panning Visualization</a></dt>
+    <dd>desc</dd>
+  <dt><a href="https://wiadarola.github.io/quadtree-visualization">Quadtree Visualization</a></dt>
+    <dd>desc</dd>
+</dl>
 
 <h1>My Resume</h1>
 <embed src="Resume.pdf" width="810px" height="1100px" />
