@@ -10,5 +10,5 @@
   <li><a href="https://wiadarola.github.io/quadtree-visualization">Quadtree Visualization</a></li>
 </ul>
 
-<h1>My Resume...</h1>
+<h1>My Resume</h1>
 <embed src="Resume.pdf" width="850px" height="1200px" />
