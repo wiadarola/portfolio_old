@@ -1,6 +1,6 @@
 # wiadarola.github.io
 
-<h1>JavaScript Three.js Projects</h1>
+<h1><u>JavaScript Three.js Projects</u></h1>
 
 <ul>
   <li><a href="https://wiadarola.github.io/threejs-meshes-tutorial">Three.js Meshes Tutorial</a></li>
