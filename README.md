@@ -1,14 +1,14 @@
 <h1>JavaScript Three.js Projects</h1>
 <dl>
-  <dt><a href="https://wiadarola.github.io/threejs-shader-tutorial">Three.js Shader Tutorial</a></dt>
+  <dt><a href="https://wiadarola.github.io/threejs-shader-tutorial">&#x2022; Three.js Shader Tutorial</a></dt>
     <dd>desc</dd>
-  <dt><a href="https://wiadarola.github.io/threejs-mesh-tutorial">Three.js Mesh Tutorial</a></dt>
+  <dt><a href="https://wiadarola.github.io/threejs-mesh-tutorial">&#x2022; Three.js Mesh Tutorial</a></dt>
     <dd>desc</dd>
-  <dt><a href="https://wiadarola.github.io/simple-world-map">Simple World Map</a></dt>
+  <dt><a href="https://wiadarola.github.io/simple-world-map">&#x2022; Simple World Map</a></dt>
     <dd>desc</dd>
-  <dt><a href="https://wiadarola.github.io/infinite-panning-visualization">Infinite Panning Visualization</a></dt>
+  <dt><a href="https://wiadarola.github.io/infinite-panning-visualization">&#x2022; Infinite Panning Visualization</a></dt>
     <dd>desc</dd>
-  <dt><a href="https://wiadarola.github.io/quadtree-visualization">Quadtree Visualization</a></dt>
+  <dt><a href="https://wiadarola.github.io/quadtree-visualization">&#x2022; Quadtree Visualization</a></dt>
     <dd>desc</dd>
 </dl>
 
