@@ -2,7 +2,7 @@
 <dl>
   <dt><a href="https://wiadarola.github.io/threejs-shader-tutorial">Three.js Shader Tutorial</a></dt>
     <dd>desc</dd>
-  <dt><a href="https://wiadarola.github.io/threejs-meshes-tutorial">Three.js Mesh Tutorial</a></dt>
+  <dt><a href="https://wiadarola.github.io/threejs-mesh-tutorial">Three.js Mesh Tutorial</a></dt>
     <dd>desc</dd>
   <dt><a href="https://wiadarola.github.io/simple-world-map">Simple World Map</a></dt>
     <dd>desc</dd>
