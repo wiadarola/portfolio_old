@@ -2,11 +2,11 @@
 <h1>JavaScript Three.js Projects</h1>
 <dl>
   <dt><a href="https://wiadarola.github.io/simple-solar-system">&#x2022; Simple Solar System</a></dt>
-    <dd>desc</dd>
+    <dd>A (non-accurate) solar system complete with orbit inclinations, orbits that slow the further a planet becomes from the sun, orbit trails, and so much more</dd>
   <dt><a href="https://wiadarola.github.io/simple-world-map">&#x2022; Simple World Map</a></dt>
-    <dd>desc</dd>
+    <dd>An infinite panning and draggable 2D world map that displays the latitude and longitude of the mouse position at the bottom of the page, as well as prints the country's sovereignty in the console on-click </dd>
   <dt><a href="https://wiadarola.github.io/infinite-panning-visualization">&#x2022; Infinite Panning Visualization</a></dt>
-    <dd>desc</dd>
+    <dd>This is a </dd>
   <dt><a href="https://wiadarola.github.io/quadtree-visualization">&#x2022; Quadtree Visualization</a></dt>
     <dd>desc</dd>
   <dt><a href="https://wiadarola.github.io/threejs-shader-tutorial">&#x2022; Three.js Shader Tutorial</a></dt>
