@@ -16,4 +16,4 @@
     <dd>This leads to two links labeled part one and two. The goal of the first part was to understand how increasing the count of objects using an instanced mesh is much less expensive than a noninstanced mesh, due to the lack of a need to resend the geometry and material of the object N times. Clicking a square will change its color. The direction of the rotation of each square is bound to its color, so changing the color may also change the rotation. The goal of part two was to learn how to manipulate and animate instanced meshes within three.js. The squares bounce off each other (for the most part) and the border wall. Sometimes the squares become trapped within each other due to funky rules when they collide a certain way. Initially, the squares would also collide strange with the border wall and would vibrate themselves out of bounds, but luckily that no longer occurs.</dd>  -->
 </dl>
 <h1>My Resume</h1>
-<embed src="Resume.pdf" width="810px" height="1080px" />
+<embed src="./Resume.pdf" width="810px" height="1080px" />
