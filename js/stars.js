@@ -7,6 +7,7 @@ const FPS = 60  // Frames per second
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 const x = canvas.width / 10; // Number of stars
+const offscreenOffset = 50;
 
 // Push stars to array
 for (let i = 0; i < x; i++) {
@@ -29,29 +30,29 @@ function createShootingStar() {
     let edge = Math.floor(Math.random() * 4);
 
     let x, y, vx, vy;
-    const maximumVelocity = 12
-    const minimumVelocity = 6
+    const maximumVelocity = 15
+    const minimumVelocity = 10
     switch (edge) {
         case 0: // Top
             x = Math.random() * canvas.width;
-            y = 0;
+            y = 0 - offscreenOffset;
             vx = Math.random() * maximumVelocity - minimumVelocity;
             vy = Math.random() * minimumVelocity;
             break;
         case 1: // Right
-            x = canvas.width;
+            x = canvas.width + offscreenOffset;
             y = Math.random() * canvas.height;
             vx = -Math.random() * minimumVelocity;
             vy = Math.random() * maximumVelocity - minimumVelocity;
             break;
         case 2: // Bottom
             x = Math.random() * canvas.width;
-            y = canvas.height;
+            y = canvas.height + offscreenOffset;
             vx = Math.random() * maximumVelocity - minimumVelocity;
             vy = -Math.random() * minimumVelocity;
             break;
         case 3: // Left
-            x = 0;
+            x = 0 - offscreenOffset;
             y = Math.random() * canvas.height;
             vx = Math.random() * minimumVelocity;
             vy = Math.random() * maximumVelocity - minimumVelocity;
@@ -69,10 +70,17 @@ function createShootingStar() {
     });
 }
 
-// Create a new shooting star every 5-10 seconds
-const maxSSDelay = 2000
-const minSSDelay = 1000
-setInterval(createShootingStar, Math.random() * (maxSSDelay - minSSDelay) + minSSDelay);  // R * (max - min) + max
+// Create a new shooting star randomly
+const maxSSDelay_ms = 15000;
+const minSSDelay_ms = 5000;
+createShootingStar();
+function scheduleNextStar() {
+    setTimeout(function() {
+        createShootingStar();
+        scheduleNextStar();
+    }, Math.random() * (maxSSDelay_ms - minSSDelay_ms) + minSSDelay_ms);
+}
+scheduleNextStar();
 
 
 // Draw the scene
@@ -119,7 +127,7 @@ function moveStars() {
         if (!s.isShootingStar && (s.y < 0 || s.y > canvas.height)) s.vy = -s.vy;
 
         // Remove shooting stars when they leave the screen
-        if (s.isShootingStar && (s.x < 0 || s.x > canvas.width || s.y < 0 || s.y > canvas.height)) {
+        if (s.isShootingStar && (s.x < -offscreenOffset || s.x > canvas.width + offscreenOffset || s.y < -offscreenOffset || s.y > canvas.height + offscreenOffset)) {
             stars.splice(i, 1);
             i--;
             x--;
