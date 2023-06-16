@@ -30,8 +30,8 @@ function createShootingStar() {
     let edge = Math.floor(Math.random() * 4);
 
     let x, y, vx, vy;
-    const maximumVelocity = 15
-    const minimumVelocity = 10
+    const maximumVelocity = 12
+    const minimumVelocity = 8
     switch (edge) {
         case 0: // Top
             x = Math.random() * canvas.width;
@@ -72,7 +72,7 @@ function createShootingStar() {
 
 // Create a new shooting star randomly
 const maxSSDelay_ms = 15000;
-const minSSDelay_ms = 5000;
+const minSSDelay_ms = 8000;
 createShootingStar();
 function scheduleNextStar() {
     setTimeout(function() {
