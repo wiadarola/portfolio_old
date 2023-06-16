@@ -12,13 +12,6 @@ const x = canvas.width / 10; // Number of stars
 for (let i = 0; i < x; i++) {
     let vx = Math.random() * 2 - 1;
     let vy = Math.random() * 2 - 1;
-    let isShootingStar = Math.random() > 0.995;
-
-    // If it's a shooting star, increase the velocity for smoother animation
-    if (isShootingStar) {
-        vx *= 20; // Change this number to make shooting stars faster or slower
-        vy *= 20;
-    }
 
     stars.push({
         x: Math.random() * canvas.width,
@@ -26,9 +19,60 @@ for (let i = 0; i < x; i++) {
         radius: Math.random() * 2, // Increase the radius
         vx: vx,
         vy: vy,
-        isShootingStar: isShootingStar,
+        isShootingStar: false,
     });
 }
+
+// Add a new shooting star
+function createShootingStar() {
+    // Randomly choose starting edge: top (0), right (1), bottom (2), left (3)
+    let edge = Math.floor(Math.random() * 4);
+
+    let x, y, vx, vy;
+    const maximumVelocity = 12
+    const minimumVelocity = 6
+    switch (edge) {
+        case 0: // Top
+            x = Math.random() * canvas.width;
+            y = 0;
+            vx = Math.random() * maximumVelocity - minimumVelocity;
+            vy = Math.random() * minimumVelocity;
+            break;
+        case 1: // Right
+            x = canvas.width;
+            y = Math.random() * canvas.height;
+            vx = -Math.random() * minimumVelocity;
+            vy = Math.random() * maximumVelocity - minimumVelocity;
+            break;
+        case 2: // Bottom
+            x = Math.random() * canvas.width;
+            y = canvas.height;
+            vx = Math.random() * maximumVelocity - minimumVelocity;
+            vy = -Math.random() * minimumVelocity;
+            break;
+        case 3: // Left
+            x = 0;
+            y = Math.random() * canvas.height;
+            vx = Math.random() * minimumVelocity;
+            vy = Math.random() * maximumVelocity - minimumVelocity;
+            break;
+    }
+
+    stars.push({
+        x: x,
+        y: y,
+        radius: Math.random() * 2,
+        vx: vx,
+        vy: vy,
+        isShootingStar: true,
+        tailLength: 0,
+    });
+}
+
+// Create a new shooting star every 5-10 seconds
+const maxSSDelay = 2000
+const minSSDelay = 1000
+setInterval(createShootingStar, Math.random() * (maxSSDelay - minSSDelay) + minSSDelay);  // R * (max - min) + max
 
 
 // Draw the scene
