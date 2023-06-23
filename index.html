@@ -1,25 +1,64 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-    <title>Portfolio</title>
-    <style>
-        body {
-            margin: 0;
-            overflow: hidden;
-        }
-
-        canvas {
-            position: absolute;
-        }
-    </style>
+  <title>Your Portfolio</title>
+  <link rel="stylesheet" href="./style.css">
 </head>
-
 <body>
-    <canvas id="stars"></canvas>
-    <h1 style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: white;">Welcome to My
-        Portfolio</h1>
-    <script src="./scripts/stars.js"></script>
-</body>
+  <header>
+    <h1>William Iadarola</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
+  <section id="about">
+    <div class="profile">
+      <img src="./images/headshot.JPG" alt="Your Headshot">
+      <h2>About Me</h2>
+      <p>This is a short paragraph about you. You can talk about your experience, your interests, and anything else you think is important.</p>
+    </div>
+  
+    <div class="skills">
+      <h2>Skills</h2>
+      <ul>
+        <li><img src="path/to/your/icon1.jpg" alt="Skill 1 Icon"><span>Skill 1</span></li>
+        <li><img src="path/to/your/icon2.jpg" alt="Skill 2 Icon"><span>Skill 2</span></li>
+        <!-- Repeat for as many skills as you have -->
+      </ul>
+    </div>
+  </section>
+  
+
+  <section id="projects">
+    <div class="project">
+      <a href="https://github.com/yourusername/project1" target="_blank">
+        <h2>Project 1</h2>
+        <img src="path/to/your/image1.jpg" alt="Project 1 Image">
+      </a>
+      <p>This is a description of Project 1. It was a really cool project because...</p>
+    </div>
+    
+    <div class="project">
+      <a href="https://github.com/yourusername/project2" target="_blank">
+        <h2>Project 2</h2>
+        <img src="path/to/your/image2.jpg" alt="Project 2 Image">
+      </a>
+      <p>This is a description of Project 2. It was a really interesting project because...</p>
+    </div>
+  
+    <!-- Repeat this structure for as many projects as you have -->
+  </section>
+  
+
+  <footer></footer>
+
+  <!-- Rest of your portfolio content goes here -->
+
+</body>
 </html>
