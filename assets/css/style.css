@@ -79,7 +79,8 @@ h6 {
   margin: 15px auto;
   display: block;
   width: 175px;
-  border: 8px solid #2c2f3f;
+  border: 5px solid #0f74a3;
+  border-radius: 50%;
 }
 
 #header .profile h1 {
@@ -307,10 +308,6 @@ section {
   background: #f5f8fd;
 }
 
-.section-title {
-  padding-bottom: 30px;
-}
-
 .section-title h2 {
   font-size: 32px;
   font-weight: bold;
@@ -338,38 +335,72 @@ section {
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
+.about .section-title {
+  padding-bottom: 0;
+}
 .about .row {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
 
-.about .column {
-
-}
-
-.about .column img {
-  width: 50%;
+.about .column .person,
+.about .column .info {
+  background: rgba(188, 188, 189, 0.226);
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.08);
   border-radius: 10px;
-  border-color: #040b14;
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 100%;
 }
 
-/*--------------------------------------------------------------
-# Skills
---------------------------------------------------------------*/
+/* Person */
+.about .column .person {
+  margin-bottom: 30px;
+  text-align: center;
+}
 
-.skills-content {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+.about .column .person h3 {
+  font-size: 40px;
   font-weight: bold;
-  font-size: large;
+  margin-bottom: 15px;
+  color: #173b6c;
 }
 
-.col-sm-3 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.about .column .person img {
+  width: 70%;
+  border: 3px solid #149ddd;
+  border-radius: 20px;
+}
+
+.about .column .person h4 {
+  font-size: 25px;
+  font-weight: 500;
   margin-bottom: 20px;
+  margin-top: 15px;
+}
+
+.about .column .person p {
+  font-size: 18px;
+  font-weight: 400;
+  padding-top:  0px;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: #173b6c;
+}
+
+.about .column .info {
+  height: 100%;
+}
+
+/* Info */
+.about .info h4 {
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.about .info .noBullets {
+  list-style: none;
 }
 
 /*--------------------------------------------------------------
