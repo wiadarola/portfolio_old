@@ -398,7 +398,8 @@ section {
 }
 
 .about .column .person img {
-  width: 45%;
+  width: 300px;
+  height: 300px;
   border: 3px solid #149ddd;
   border-radius: 20px;
 }
