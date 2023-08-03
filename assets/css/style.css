@@ -364,7 +364,7 @@ section {
 
 .about .row {
   display: grid;
-  grid-gap: 30px;
+  grid-gap: 20px;
   grid-template-columns: 1fr 1fr;
 }
 
@@ -692,7 +692,7 @@ section {
 .contact .row {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 30px;
+  grid-gap: 20px;
 }
 
 @media (max-width: 768px) {
