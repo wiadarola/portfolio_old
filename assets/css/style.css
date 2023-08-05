@@ -6,15 +6,6 @@ body {
   color: #272829;
 }
 
-a {
-  color: #149ddd;
-  text-decoration: none;
-}
-
-a:hover {
-  color: #37b3ed;
-  text-decoration: none;
-}
 
 h1,
 h2,
@@ -611,19 +602,6 @@ section {
   text-align: center;
 }
 
-.portfolio .portfolio-wrap::before {
-  content: "";
-  background: rgba(255, 255, 255, 0.5);
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  transition: all ease-in-out 0.3s;
-  z-index: 2;
-  opacity: 0;
-}
-
 .portfolio-wrap img {
   border: 1px solid #ddd;
   border-radius: 10px;
@@ -705,7 +683,10 @@ section {
 }
 
 .repoLinks a {
-  all: initial;
+  font-size: 19px;
+  font-weight: 500;
+  color: #10294d;
+  margin: 10px
 }
 
 /*--------------------------------------------------------------
