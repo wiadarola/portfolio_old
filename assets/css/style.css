@@ -421,9 +421,29 @@ section {
   margin-bottom: 0;
 }
 
-.about .column ul li a i.bx {
-  color: #10294d;
+.about .column ul .iconLi {
+  display: grid;
+  grid-template-columns: auto auto;
+  margin: 10px;
+}
+.about .column ul li i {
+  font-size: 30px;
+  color: #2868c2;
+  float: left;
+  width: 44px;
+  height: 44px;
+  background: #d9e4f3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+}
+
+.about .column ul li i.bx {
+  color: #1f4b8a;
   font-size: 35px;
+  margin-right: 5px;
 }
 
 .iconLi a {
@@ -457,16 +477,12 @@ section {
   margin-top: 10px;
 }
 
-
-
 /* Info */
 .about .column .info h4 {
   font-size: 28px;
   font-weight: 600;
   margin-bottom: 2px;
 }
-
-
 
 .about .column .info ul {
   margin-bottom: 30px;
@@ -670,7 +686,7 @@ section {
 
 .repoLink i {
   font-size: 30px;
-  color: #149ddd;
+  color: #2868c2;
   float: left;
   width: 44px;
   height: 44px;
