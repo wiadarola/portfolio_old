@@ -623,9 +623,24 @@ section {
 }
 
 .portfolio-text {
+  margin-top: 20px;
   padding: 20px;
-  position: relative;
-  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.portfolio-text h3 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.portfolio-text p {
+  font-size: 16px;
+  font-weight: 500;
+  color: #10294d;
+  text-align: center;
 }
 
 /*--------------------------------------------------------------
