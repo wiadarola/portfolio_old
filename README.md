@@ -15,8 +15,6 @@ Hello there! I'm William Iadarola. I'm a passionate Software Engineer from San J
 - **Databases:** Oracle Database, MySQL
 - **Tools:** Git, Docker
 
-*Replace with your actual skills*
-
 ---
 
 ## 🌍 Where to find me
